@@ -11,7 +11,8 @@ function goIndex(req,res){
     res.writeHead(200,{
         'content-type':'text/html'
     });
-    var filename=path.join('d:/WebStorm9.0.2/book_nodejsDevelopmentofactualcombat/views','parse_dns.html');
+   // var filename=path.join('d:/WebStorm9.0.2/book_nodejsDevelopmentofactualcombat/views','parse_dns.html');
+   var filename=path.join('/views','parse_dns.html');
     var buf=fs.readFileSync(filename);
     res.end(buf);
 
